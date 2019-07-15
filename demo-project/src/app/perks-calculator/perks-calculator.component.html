@@ -1,0 +1,24 @@
+<p>perks-calculator works!</p>
+<table>
+    <tr>
+        <td>Name</td>
+        <td><input [(ngModel)]="employee.ename" type="string"></td>
+    </tr>
+    <tr>
+        <td>Basic</td>
+        <td><input [(ngModel)]="employee.basic" type="number"></td>
+    </tr>
+    <tr>
+        <td>HRA %</td>
+        <td><input [(ngModel)]="employee.hra" type="number"></td>
+    </tr>
+    <tr>
+        <td>DA %</td>
+        <td><input [(ngModel)]="employee.da" type="number"></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button (click)="logEmployee()">Calculate Net</button>
+        </td>        
+    </tr>
+</table>
